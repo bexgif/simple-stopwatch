@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F4C2C2;
+    margin: 0;
+}
+
+.stopwatch {
+    text-align: center;
+    background-color: palevioletred;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#display {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+button:disabled {
+    background-color: plum;
+    cursor: not-allowed;
+}
+
+button:not(:disabled) {
+    background-color: papayawhip;
+    color: plum;
+}
+
+button:hover:not(:disabled) {
+    background-color: plum;
+}
